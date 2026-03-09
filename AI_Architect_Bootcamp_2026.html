@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architect | Technical Summer Camp 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .modal-overlay { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2"><span class="text-2xl font-bold uppercase tracking-tighter">AI <span class="text-indigo-600">Architect</span></span></div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="#objectives" class="hover:text-indigo-600 transition">Objectives</a>
+                    <a href="#curriculum" class="hover:text-indigo-600 transition">Curriculum</a>
+                    <button onclick="toggleModal()" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-700 transition">Join Waitlist</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 bg-white text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-4">Technical Track 2026: NLP Edition</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Architecting the <br><span class="gradient-text">Future of Language</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">Step inside the black box of Large Language Models. From the mathematics of neurons to the deployment of autonomous AI Agents.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="toggleModal()" class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-indigo-700 transition shadow-xl shadow-indigo-100">Apply for 2026</button>
+                <a href="index.html" class="border-2 border-indigo-600 text-indigo-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-indigo-50 transition">View 2025 Recap</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="curriculum" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">Detailed Curriculum</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-indigo-600 text-white p-6 rounded-3xl">
+                        <h3 class="text-2xl font-bold">Week 1: Foundations of NLP</h3>
+                        <p class="text-indigo-100 text-sm">History, Neurons & The Science of Words</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-200 pl-6 space-y-8">
+                        <div>
+                            <h4 class="font-bold text-indigo-600">Day 1-2: The Evolution of Chat</h4>
+                            <p class="text-sm text-gray-600 mt-1">From ELIZA (1966) to GPT-4. Understanding AI types and why language was so hard for computers to solve.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-600">Day 3: The Perceptron & The Brain</h4>
+                            <p class="text-sm text-gray-600 mt-1">The math of a neuron. Building simple neural networks and understanding how layers process signals.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-600">Day 4-5: Converting Words to Numbers</h4>
+                            <p class="text-sm text-gray-600 mt-1">Tokenization and Word Embeddings. Mapping semantic meaning to mathematical space.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-purple-600 text-white p-6 rounded-3xl">
+                        <h3 class="text-2xl font-bold">Week 2: Advanced Architecture</h3>
+                        <p class="text-purple-100 text-sm">Transformers, APIs & Deployment</p>
+                    </div>
+                    <div class="border-l-4 border-purple-200 pl-6 space-y-8">
+                        <div>
+                            <h4 class="font-bold text-purple-600">Day 6-7: The Transformer Revolution</h4>
+                            <p class="text-sm text-gray-600 mt-1">Unpacking the 2017 paper that changed everything. Understanding Encoders and Self-Attention mechanics.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-purple-600">Day 8: Prompt Engineering & Custom APIs</h4>
+                            <p class="text-sm text-gray-600 mt-1">Mastering system prompts. Using API Keys to run models like Gemma-2 and fine-tuning outputs.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-purple-600">Day 9-10: Building RAG & AI Agents</h4>
+                            <p class="text-sm text-gray-600 mt-1">Final Project: Creating a chatbot that uses RAG (Retrieval) and designing autonomous workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="py-20 bg-indigo-600 text-white rounded-t-[3rem] text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold mb-8">Ready to Build?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div><div class="text-3xl font-bold">€350</div><div class="text-indigo-200 text-sm">Investment</div></div>
+                <div><div class="text-3xl font-bold">20h</div><div class="text-indigo-200 text-sm">Lab Time</div></div>
+                <div><div class="text-3xl font-bold">None</div><div class="text-indigo-200 text-sm">Pre-reqs</div></div>
+                <div><div class="text-3xl font-bold">14+</div><div class="text-indigo-200 text-sm">Target Age</div></div>
+            </div>
+            <button onclick="toggleModal()" class="bg-white text-indigo-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-gray-100 transition shadow-xl">Express Interest</button>
+        </div>
+    </section>
+
+    <!-- Unified Interest Form Modal -->
+    <div id="interestModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="modal-overlay absolute inset-0" onclick="toggleModal()"></div>
+        <div class="bg-white rounded-3xl w-full max-w-xl relative z-10 shadow-2xl overflow-hidden border border-gray-100">
+            <div class="bg-indigo-600 p-6 text-white flex justify-between items-center">
+                <div><h3 class="text-xl font-bold">Bootcamp Interest Form</h3><p class="text-indigo-100 text-xs">Summer 2026 Registration Hub</p></div>
+                <button onclick="toggleModal()" class="text-2xl hover:text-indigo-200">&times;</button>
+            </div>
+            <form id="unifiedForm" class="p-8 space-y-4" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Full Name</label><input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Student or Parent Name"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Email Address</label><input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Phone Number</label><input type="tel" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="+357 ..."></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Preferred City</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option>Nicosia</option><option>Larnaca</option></select></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Program Choice</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option selected>AI Architect (Technical NLP)</option><option>AI Power-User (Literacy)</option><option>I'm not sure yet</option></select></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Student Age</label><input type="number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. 15"></div>
+                </div>
+                <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Reason for Interest</label><textarea rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Why are you interested in this camp?"></textarea></div>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Submit Interest</button>
+            </form>
+            <div id="successMsg" class="hidden p-12 text-center">
+                <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-check"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Message Received!</h3><p class="text-slate-500 mb-6">We'll contact you shortly about the Summer 2026 programs.</p><button onclick="toggleModal()" class="text-indigo-600 font-bold">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal() { const modal = document.getElementById('interestModal'); modal.classList.toggle('hidden'); if(!modal.classList.contains('hidden')) { document.getElementById('unifiedForm').classList.remove('hidden'); document.getElementById('successMsg').classList.add('hidden'); } }
+        function handleFormSubmit(e) { e.preventDefault(); document.getElementById('unifiedForm').classList.add('hidden'); document.getElementById('successMsg').classList.remove('hidden'); }
+    </script>
+</body>
+</html>

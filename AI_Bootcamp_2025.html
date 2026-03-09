@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summer Bootcamp 2025 | Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .module-card:hover .module-icon { transform: scale(1.1) rotate(5deg); }
+        .testimonial-card { transition: all 0.3s ease; }
+        .testimonial-card:hover { transform: translateY(-5px); }
+        .modal-overlay { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="font-bold text-xl tracking-tight uppercase">AI Camp <span class="text-indigo-600">Summer 25</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm items-center">
+                    <a href="#goals" class="hover:text-indigo-600 transition">Goals</a>
+                    <a href="#curriculum" class="hover:text-indigo-600 transition">Curriculum</a>
+                    <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
+                    <button onclick="toggleModal()" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-700 transition">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 overflow-hidden text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-4">Official Recap: Summer 2025</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Demystifying the <br><span class="gradient-text">Future of Intelligence</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">A comprehensive journey through the landscape of Artificial Intelligence, from core mathematical neurons to large-scale transformer models.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="toggleModal()" class="bg-indigo-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition">Enroll Now</button>
+                <a href="index.html#camps" class="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-xl font-semibold hover:bg-indigo-50 transition">View 2026 Programs</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="goals" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16"><h2 class="text-3xl font-bold mb-4">Primary Learning Goals</h2><p class="text-gray-500">What our students mastered during the bootcamp.</p></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-brain"></i></div>
+                    <h3 class="font-bold mb-2">AI Fundamentals</h3><p class="text-sm text-gray-600">Distinguishing Narrow AI, AGI, and ASI, plus pattern-based ML logic.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="font-bold mb-2">Master the Pipeline</h3><p class="text-sm text-gray-600">Internalizing Data Collection, Model Training, and Model Testing cycles.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-eye"></i></div>
+                    <h3 class="font-bold mb-2">CV & NLP Pillars</h3><p class="text-sm text-gray-600">Gaining practical experience with Computer Vision and Language Processing.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="font-bold mb-2">Real-World Intuition</h3><p class="text-sm text-gray-600">Using relatable analogies like "Dimmer Switches" and "Word Maps."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16"><h2 class="text-4xl font-extrabold mb-4">Student Voices</h2><p class="text-gray-500">First-hand experiences from our 2025 cohort.</p></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="testimonial-card p-8 rounded-3xl bg-indigo-50 border border-indigo-100 relative">
+                    <i class="fas fa-quote-left text-indigo-200 text-4xl absolute top-6 left-6"></i>
+                    <p class="text-gray-700 italic mb-6 relative z-10 leading-relaxed">"What stuck with me most was that AI consists of neurons inside a network... similar to the way the human brain works. A fascinating fact was learning that computers only understand numbers."</p>
+                    <div class="flex items-center"><div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold mr-3">S.M.</div><div><h4 class="font-bold text-gray-900">Stylianos M.</h4><p class="text-xs text-indigo-600 font-medium">GCSC Student</p></div></div>
+                </div>
+                <div class="testimonial-card p-8 rounded-3xl bg-blue-50 border border-blue-100 relative">
+                    <i class="fas fa-quote-left text-blue-200 text-4xl absolute top-6 left-6"></i>
+                    <p class="text-gray-700 italic mb-6 relative z-10 leading-relaxed">"We made our own AI model and trained it! I learned that the result is more effective if you have many samples and an 80/20 train/test split."</p>
+                    <div class="flex items-center"><div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">G.G.</div><div><h4 class="font-bold text-gray-900">Giorgos G.</h4><p class="text-xs text-blue-600 font-medium">GCSC Student</p></div></div>
+                </div>
+                <div class="testimonial-card p-8 rounded-3xl bg-purple-50 border border-purple-100 relative">
+                    <i class="fas fa-quote-left text-purple-200 text-4xl absolute top-6 left-6"></i>
+                    <p class="text-gray-700 italic mb-6 relative z-10 leading-relaxed">"The point of view of a computer and the manner in which it thinks were fascinating... learning how to use Gemini and Python to run AI models offline."</p>
+                    <div class="flex items-center"><div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">O.V.</div><div><h4 class="font-bold text-gray-900">Orestis V.</h4><p class="text-xs text-purple-600 font-medium">GCSC Student</p></div></div>
+                </div>
+                <div class="testimonial-card p-8 rounded-3xl bg-pink-50 border border-pink-100 relative">
+                    <i class="fas fa-quote-left text-pink-200 text-4xl absolute top-6 left-6"></i>
+                    <p class="text-gray-700 italic mb-6 relative z-10 leading-relaxed">"What I liked most was how AI models think with perceptrons... Understanding embedding spaces and how models look for similar words was great."</p>
+                    <div class="flex items-center"><div class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold mr-3">S.L.</div><div><h4 class="font-bold text-gray-900">Stefanos L.</h4><p class="text-xs text-pink-600 font-medium">GCSC Student</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 text-center">
+        <div class="max-w-4xl mx-auto px-4"><h2 class="text-3xl font-bold mb-6">Missed Summer 2025?</h2><p class="text-gray-600 mb-8">Join the waiting list for our 2026 cohorts and secure your academic advantage.</p><button onclick="toggleModal()" class="bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-indigo-700 transition shadow-xl">Enroll Now</button></div>
+    </section>
+
+    <footer class="py-12 bg-white border-t border-gray-100 text-center"><p class="text-gray-400 text-sm">© 2025 AI Summer Bootcamp. All rights reserved.</p></footer>
+
+    <!-- Enrollment Modal (SYCHRONIZED) -->
+    <div id="interestModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="modal-overlay absolute inset-0" onclick="toggleModal()"></div>
+        <div class="bg-white rounded-3xl w-full max-w-xl relative z-10 shadow-2xl overflow-hidden border border-gray-100">
+            <div class="bg-indigo-600 p-6 text-white flex justify-between items-center">
+                <div><h3 class="text-xl font-bold">Bootcamp Interest Form</h3><p class="text-indigo-100 text-xs">Summer 2026 Registration Hub</p></div>
+                <button onclick="toggleModal()" class="text-2xl hover:text-indigo-200">&times;</button>
+            </div>
+            <form id="unifiedForm" class="p-8 space-y-4" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Full Name</label><input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Student or Parent Name"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Email Address</label><input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Phone Number</label><input type="tel" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="+357 ..."></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Preferred City</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option>Nicosia</option><option>Larnaca</option></select></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Program Choice</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option>AI Architect (Technical NLP)</option><option>AI Power-User (Literacy)</option><option>I'm not sure yet</option></select></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Student Age</label><input type="number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. 15"></div>
+                </div>
+                <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Reason for Interest</label><textarea rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Why are you interested in this camp?"></textarea></div>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Submit Interest</button>
+            </form>
+            <div id="successMsg" class="hidden p-12 text-center">
+                <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-check"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Message Received!</h3><p class="text-slate-500 mb-6">We'll contact you shortly about the Summer 2026 programs.</p><button onclick="toggleModal()" class="text-indigo-600 font-bold">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal() { const modal = document.getElementById('interestModal'); modal.classList.toggle('hidden'); if(!modal.classList.contains('hidden')) { document.getElementById('unifiedForm').classList.remove('hidden'); document.getElementById('successMsg').classList.add('hidden'); } }
+        function handleFormSubmit(e) { e.preventDefault(); document.getElementById('unifiedForm').classList.add('hidden'); document.getElementById('successMsg').classList.remove('hidden'); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Power-User | Literacy Summer Camp 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .modal-overlay { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2"><span class="text-2xl font-bold uppercase tracking-tighter">AI <span class="text-emerald-600">Power-User</span></span></div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                    <a href="#outcomes" class="hover:text-emerald-600 transition">Outcomes</a>
+                    <a href="#curriculum" class="hover:text-emerald-600 transition">Curriculum</a>
+                    <button onclick="toggleModal()" class="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-emerald-700 transition">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 bg-white text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4">AI Literacy Summer Camp 2026</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900">Study Smarter with <br><span class="gradient-text">AI Mastery</span></h1>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">Unlock the ultimate academic advantage. Learn to use AI safely, ethically, and creatively to revolutionize your learning workflow.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="toggleModal()" class="bg-emerald-600 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-emerald-700 transition shadow-xl shadow-emerald-100">Reserve a Spot</button>
+                <a href="index.html" class="border-2 border-emerald-600 text-emerald-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-emerald-50 transition">Check 2025 Camp</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="curriculum" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">A Week of Digital Mastery</h2>
+                <p class="text-slate-500">How we spend our 5 days together.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-6 items-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex-shrink-0 flex items-center justify-center font-bold">01</div>
+                    <div><h4 class="font-bold">AI Explorer & Safe Playground</h4><p class="text-sm text-slate-600">Defining AI types and gaining first access to our safe AI Playground. Setting ethical guardrails.</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-6 items-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex-shrink-0 flex items-center justify-center font-bold">02</div>
+                    <div><h4 class="font-bold">The Hyper-Student Workflow</h4><p class="text-sm text-slate-600">Mastering NotebookLM. Using AI to generate flashcards, summaries, and self-quizzing materials.</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-6 items-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex-shrink-0 flex items-center justify-center font-bold">03</div>
+                    <div><h4 class="font-bold">Media Lab & Study Graphics</h4><p class="text-slate-600 text-sm">Generating images and study media responsibly. Learning to prompt for visual aids.</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-6 items-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex-shrink-0 flex items-center justify-center font-bold">04</div>
+                    <div><h4 class="font-bold">Fact vs Fake</h4><p class="text-slate-600 text-sm">Media literacy in the age of Deepfakes. Spotting AI generation and verifying info.</p></div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex gap-6 items-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex-shrink-0 flex items-center justify-center font-bold">05</div>
+                    <div><h4 class="font-bold">The Future: RAG & Agents</h4><p class="text-slate-600 text-sm">A look at RAG (connecting AI to books) and how AI Agents will change academic work.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="toolbox" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">The Power-User Toolbox</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-50 rounded-2xl text-center">
+                    <i class="fas fa-book text-3xl text-blue-500 mb-4"></i>
+                    <h5 class="font-bold">NotebookLM</h5><p class="text-xs text-slate-500">Your AI Study Buddy</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl text-center">
+                    <i class="fas fa-robot text-3xl text-emerald-500 mb-4"></i>
+                    <h5 class="font-bold">AI Playground</h5><p class="text-xs text-slate-500">Private & Safe Access</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl text-center">
+                    <i class="fas fa-image text-3xl text-purple-500 mb-4"></i>
+                    <h5 class="font-bold">Gen-Art Tools</h5><p class="text-xs text-slate-500">For Creative Projects</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl text-center">
+                    <i class="fas fa-search text-3xl text-amber-500 mb-4"></i>
+                    <h5 class="font-bold">Fact Checkers</h5><p class="text-xs text-slate-500">Identifying Media</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="py-20 bg-slate-900 text-white rounded-t-[3rem] text-center">
+        <div class="max-w-4xl mx-auto px-4"><h2 class="text-4xl font-extrabold mb-4 italic">Future-Proof Your Learning</h2><div class="text-emerald-400 text-5xl font-black mb-6">€150</div><button onclick="toggleModal()" class="bg-emerald-500 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-emerald-400 transition shadow-lg">Enroll Now</button></div>
+    </section>
+
+    <!-- Unified Interest Form Modal -->
+    <div id="interestModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <div class="modal-overlay absolute inset-0" onclick="toggleModal()"></div>
+        <div class="bg-white rounded-3xl w-full max-w-xl relative z-10 shadow-2xl overflow-hidden border border-gray-100">
+            <div class="bg-emerald-600 p-6 text-white flex justify-between items-center">
+                <div><h3 class="text-xl font-bold">Bootcamp Interest Form</h3><p class="text-emerald-100 text-xs">Summer 2026 Registration Hub</p></div>
+                <button onclick="toggleModal()" class="text-2xl hover:text-emerald-200">&times;</button>
+            </div>
+            <form id="unifiedForm" class="p-8 space-y-4" onsubmit="handleFormSubmit(event)">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Full Name</label><input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Student or Parent Name"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Email Address</label><input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Phone Number</label><input type="tel" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="+357 ..."></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Preferred City</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"><option>Nicosia</option><option>Larnaca</option></select></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Program Choice</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"><option>AI Architect (Technical NLP)</option><option selected>AI Power-User (Literacy)</option><option>I'm not sure yet</option></select></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Student Age</label><input type="number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="e.g. 15"></div>
+                </div>
+                <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Reason for Interest</label><textarea rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Why are you interested in this camp?"></textarea></div>
+                <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-4 rounded-xl hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Submit Interest</button>
+            </form>
+            <div id="successMsg" class="hidden p-12 text-center">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-check"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Message Received!</h3><p class="text-slate-500 mb-6">We'll contact you shortly about the Summer 2026 programs.</p><button onclick="toggleModal()" class="text-emerald-600 font-bold">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal() { const modal = document.getElementById('interestModal'); modal.classList.toggle('hidden'); if(!modal.classList.contains('hidden')) { document.getElementById('unifiedForm').classList.remove('hidden'); document.getElementById('successMsg').classList.add('hidden'); } }
+        function handleFormSubmit(e) { e.preventDefault(); document.getElementById('unifiedForm').classList.add('hidden'); document.getElementById('successMsg').classList.remove('hidden'); }
+    </script>
+</body>
+</html>
