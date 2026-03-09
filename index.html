@@ -76,39 +76,55 @@
     <footer class="py-12 bg-white border-t border-gray-200 text-center text-gray-400 text-sm">© 2026 AI Summer Bootcamp Hub. Nicosia & Larnaca, Cyprus.</footer>
 
     <!-- Enrollment Modal (SYCHRONIZED) -->
-    <div id="interestModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+    <div id="interestModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 text-left">
         <div class="modal-overlay absolute inset-0" onclick="toggleModal()"></div>
-        <div class="bg-white rounded-3xl w-full max-w-xl relative z-10 shadow-2xl overflow-hidden border border-gray-100">
+        <div class="bg-white rounded-3xl w-full max-w-xl relative z-10 shadow-2xl overflow-hidden border border-gray-100 text-left">
             <div class="bg-indigo-600 p-6 text-white flex justify-between items-center">
-                <div><h3 class="text-xl font-bold">Bootcamp Interest Form</h3><p class="text-indigo-100 text-xs">Summer 2026 Registration Hub</p></div>
-                <button onclick="toggleModal()" class="text-2xl hover:text-indigo-200">&times;</button>
+                <div><h3 class="text-xl font-bold">Bootcamp Interest Form</h3><p class="text-indigo-100 text-xs text-left">Summer 2026 Registration Hub</p></div>
+                <button onclick="toggleModal()" class="text-2xl hover:text-indigo-200 text-white">&times;</button>
             </div>
-            <form id="unifiedForm" class="p-8 space-y-4" onsubmit="handleFormSubmit(event)">
+            
+            <form id="unifiedForm" class="p-8 space-y-4" 
+                  action="https://docs.google.com/forms/d/e/1FAIpQLSe-z2x8_PDKFuaXqeazJfABInmLz6RQPnWMbX7_Z1YIn7zv_A/formResponse" 
+                  method="POST" 
+                  target="hidden_iframe"
+                  onsubmit="handleFormSubmit()">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Full Name</label><input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Student or Parent Name"></div>
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Email Address</label><input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Full Name</label><input type="text" name="entry.1256706127" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Student or Parent Name"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Email Address</label><input type="email" name="entry.643244950" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Phone Number</label><input type="tel" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="+357 ..."></div>
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Preferred City</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option>Nicosia</option><option>Larnaca</option></select></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Phone Number</label><input type="tel" name="entry.1581823731" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="+357 ..."></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">City</label><select name="entry.1282330012" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option value="Nicosia">Nicosia</option><option value="Larnaca">Larnaca</option></select></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Program Choice</label><select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option>AI Architect (Technical NLP)</option><option>AI Power-User (Literacy)</option><option>I'm not sure yet</option></select></div>
-                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Student Age</label><input type="number" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. 15"></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Program Choice</label><select name="entry.1904383674" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"><option value="AI Architect (Technical NLP)">AI Architect (Technical NLP)</option><option value="AI Power-User (Literacy)">AI Power-User (Literacy)</option><option value="I'm not sure yet">I'm not sure yet</option></select></div>
+                    <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Age</label><input type="number" name="entry.1927694265" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. 15"></div>
                 </div>
-                <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider">Reason for Interest</label><textarea rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Why are you interested in this camp?"></textarea></div>
+                <div><label class="block text-[10px] font-black text-slate-400 uppercase mb-1 tracking-wider text-left">Reason</label><textarea name="entry.224223628" rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Why are you interested?"></textarea></div>
                 <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Submit Interest</button>
             </form>
-            <div id="successMsg" class="hidden p-12 text-center">
-                <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-check"></i></div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">Message Received!</h3><p class="text-slate-500 mb-6">We'll contact you shortly about the Summer 2026 programs.</p><button onclick="toggleModal()" class="text-indigo-600 font-bold">Close</button>
-            </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <div id="successMsg" class="hidden p-12 text-center text-slate-900"><div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-check"></i></div><h3 class="text-2xl font-bold text-slate-900 mb-2">Message Received!</h3><p class="text-slate-500 mb-6 text-sm text-center">We'll contact you shortly about the Summer 2026 programs.</p><button onclick="toggleModal()" class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-bold">Close Window</button></div>
         </div>
     </div>
 
     <script>
-        function toggleModal() { const modal = document.getElementById('interestModal'); modal.classList.toggle('hidden'); if(!modal.classList.contains('hidden')) { document.getElementById('unifiedForm').classList.remove('hidden'); document.getElementById('successMsg').classList.add('hidden'); } }
-        function handleFormSubmit(e) { e.preventDefault(); document.getElementById('unifiedForm').classList.add('hidden'); document.getElementById('successMsg').classList.remove('hidden'); }
+        function toggleModal() { 
+            const modal = document.getElementById('interestModal'); 
+            const form = document.getElementById('unifiedForm');
+            const success = document.getElementById('successMsg');
+            modal.classList.toggle('hidden'); 
+            if(!modal.classList.contains('hidden')) { 
+                form.classList.remove('hidden'); 
+                success.classList.add('hidden'); 
+            } 
+        }
+
+        function handleFormSubmit() {
+            document.getElementById('unifiedForm').classList.add('hidden'); 
+            document.getElementById('successMsg').classList.remove('hidden');
+        }
     </script>
 </body>
 
